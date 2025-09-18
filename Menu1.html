@@ -8,6 +8,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
+<style>
+    body {
+      background: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .menu-section {
+      padding: 40px 0;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .menu-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+    .menu-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+    }
+    .menu-desc {
+      font-size: 13px;
+      color: #777;
+      margin: 0;
+    }
+    .price {
+      font-weight: bold;
+      margin-left: auto;
+    }
+    .badge-custom {
+      font-size: 12px;
+      padding: 3px 8px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+    .badge-new { background: #ff4d4d; color: white; }
+    .badge-gluten { background: #ff6600; color: white; }
+    .badge-fish { background: #eee; color: #555; }
+    .big-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+</style>
 <body>
  <div class="container-fluid" >
    <div class="row text-center">
@@ -105,7 +154,113 @@
     <div class="col-md-4"></div>
 </div>
 </div>
+</div>
 
+<div class="container menu-section">
+  <div class="row">
+
+    <!-- Left Images -->
+    <div class="col-lg-3  text-center">
+      <img src="pic/pic60.jpg" class="big-img" alt="">
+    </div>
+     <div class="col-lg-3  text-center">
+      <img src="pic/pic61.jpg" class="big-img" alt="">
+    </div>
+
+    <!-- Right Menu -->
+    <div class="col-lg-6 ">
+      <div class="menu-item">
+        <img src="pic/pic62.jpg" alt="">
+        <div>
+          <p class="menu-title">NOODLES</p>
+          <p class="menu-desc">Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="price">$16</span>
+        <span class="badge-custom badge-new">NEW</span>
+      </div>
+
+      <div class="menu-item" style="margin-top: 5px;">
+        <img src="pic/pic63.jpg" alt="">
+        <div>
+          <p class="menu-title" >CHICKEN</p>
+          <p class="menu-desc">Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="price">$19</span>
+        <span class="badge-custom badge-new">NEW</span>
+      </div>
+
+     <div class="menu-item"  style="margin-top: 5px;">
+        <img src="pic/pic64.jpg" alt="">
+        <div>
+          <p class="menu-title">CHICKEN</p>
+          <p class="menu-desc">Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="price">$19</span>
+        <span class="badge-custom badge-new">NEW</span>
+      </div>
+
+       <div class="menu-item"  style="margin-top: 5px;">
+        <img src="pic/pic65.jpg" alt="">
+        <div>
+          <p class="menu-title">VEGETARIAN FRIED</p>
+          <p class="menu-desc">Lorem ipsum dolor</p>
+        </div>
+        <span class="price">$34</span>
+        <span class="badge-custom babadge-new">FISH</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+      <div class="menu-item">
+        <img src="pic/pic62.jpg" alt="">
+        <div>
+          <p class="menu-title">NOODLES</p>
+          <p class="menu-desc">Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="price">$16</span>
+        <span class="badge-custom badge-new">NEW</span>
+      </div>
+
+      <div class="menu-item" style="margin-top: 5px;">
+        <img src="pic/pic63.jpg" alt="">
+        <div>
+          <p class="menu-title" >CHICKEN</p>
+          <p class="menu-desc">Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="price">$19</span>
+        <span class="badge-custom badge-new">NEW</span>
+      </div>
+
+     <div class="menu-item"  style="margin-top: 5px;">
+        <img src="pic/pic64.jpg" alt="">
+        <div>
+          <p class="menu-title">CHICKEN</p>
+          <p class="menu-desc">Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="price">$19</span>
+        <span class="badge-custom badge-new">NEW</span>
+      </div>
+
+       <div class="menu-item"  style="margin-top: 5px;">
+        <img src="pic/pic65.jpg" alt="">
+        <div>
+          <p class="menu-title">VEGETARIAN FRIED</p>
+          <p class="menu-desc">Lorem ipsum dolor</p>
+        </div>
+        <span class="price">$34</span>
+        <span class="badge-custom babadge-new">FISH</span>
+      </div>
+    
+        </div>
+        <div class="col-md-6">
+            <img class="img-fluid" src="pic/pic66.jpg" style="width: 100%;" alt="">
+        </div>
+    </div>
+</div>
 
 
 
