@@ -58,12 +58,12 @@
     }
   </style>
 </head>
-<body>
+<body style="margin: 0; padding: 0;">
 <div class="container-fluid" >
    <div class="row text-center">
-            <div class="col-md-12" style="background:linear-gradient(rgba(0, 0, 0,0.6)), url(pic/pic28.jpg); height: 300px; background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="col-md-12" style="background:linear-gradient(rgba(0, 0, 0,0.6)), url(pic/pic28.jpg); height: 350px; background-repeat: no-repeat; background-position: center; background-size: cover;">
                     <div class="innerbox" style= "height: 300px; width: 100%; position: relative;">
-                         <p style="color: white; font-size: 100px; font-weight: 300; position: relative; top: 50px;">Contact</div>
+                         <p style="color: white; font-size: 100px; font-weight: 300; position: relative; top: 75px;">Contact</div>
 
             </div>
         </div>
@@ -80,14 +80,14 @@
           Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum.
           Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque.
         </p>
-        <form>
-          <input type="text" class="form-control" placeholder="Name :">
+        
+          <input type="text" class="form-control" placeholder="Name :" id="name">
 <br>
-          <input type="email" class="form-control" placeholder="Email :">
+          <input type="email" class="form-control" placeholder="Email :" id="mail">
           <br>
-          <textarea class="form-control" rows="4" placeholder="Message :"></textarea>
-          <button type="submit" class="btn btn-submit" style="margin-top: 45px; border-radius: 10px; padding: 10px 25px;">SEND NOW</button>
-        </form>
+          <textarea class="form-control" rows="4" placeholder="Message :" id="message"></textarea>
+          <button type="submit" onclick="submit()" class="btn btn-submit" style="margin-top: 45px; border-radius: 10px; padding: 10px 25px;">SEND NOW</button>
+        
       </div>
 
       <!-- Right Side Map + Info -->
@@ -125,6 +125,44 @@
     </div>
   </div>
 </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+function submit(){
+  
+let name= document.getElementById("name").value
+let mail= document.getElementById("mail").value
+let massage= document.getElementById("message").value
+
+if(name && mail && massage){
+  localStorage.setItem("username",name)
+  localStorage.setItem("user mail",mail)
+  localStorage.setItem("user massage",massage)
+
+  Swal.fire({
+  title: 'Submitted!',
+  text: 'Your message is recieved.......',
+  icon: 'success',
+  confirmButtonText: 'Ok'
+})
+}
+
+else{
+    Swal.fire({
+  title: 'Data Not Recived!',
+  text: 'Input feild is empty.......',
+  icon: 'error',
+  confirmButtonText: 'Ok'
+})
+}
+
+
+
+}
+
+</script>
 
 </body>
 </html>
