@@ -57,6 +57,19 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
+
+
+      html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* horizontal scroll aur white space hata dega */
+}
+
+/* Images ko responsive banaye */
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 <body style="margin: 0; padding: 0;">
  <div class="container-fluid" >
@@ -160,14 +173,14 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12 appetizer mt-5">
-      <h6 class="text-center" style="color: #444242; font-size: 150px; font-family:Gabriola; letter-spacing: 15px; margin-top: 70px; text-shadow: 5px 5px black;">Appetizers</h6>
+      <h6 class="text-center" style="color: white; font-size: 100px; font-family:Gabriola;  margin-top: 70px; text-shadow: 5px 5px black; ">Appetizers</h6>
 
     </div>
   </div>
 </div>
 
 <div class="container menu-section">
-  <div class="row g-5">
+  <div class="row ">
 
     <!-- Left Images -->
     <div class="col-md-3 text-center">
@@ -223,7 +236,7 @@
 </div>
 
 <div class="container">
-    <div class="row g-5">
+    <div class="row ">
         <div class="col-md-6">
       <div class="menu-item">
         <img src="pic/pic67.jpg" alt="">
@@ -275,27 +288,27 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12 main-cource mt-5">
-      <h6 class="text-center" style="color: #444242; font-size: 150px; font-family:Gabriola; letter-spacing: 15px; margin-top: 70px; text-shadow: 5px 5px black;">Main Courses</h6>
+      <h6 class="text-center img-fluid" style="color: white; font-size: 100px; font-family:Gabriola; ; margin-top: 70px; text-shadow: 5px 5px black;">Main Courses</h6>
 
     </div>
   </div>
 </div>
 
 <div class="container menu-section">
-  <div class="row g-5">
+  <div class="row ">
 
     <!-- Left Images -->
     <div class="col-md-3 text-center">
-      <img src="pic/pic75.jpg" class="big-img mt-3" alt="">
+      <img class="img-fluid" src="pic/pic75.jpg" class="big-img mt-3" alt="">
     </div>
      <div class="col-md-3 text-center">
-      <img src="pic/pic76.jpg" class="big-img mt-3" alt="">
+      <img class="img-fluid" src="pic/pic76.jpg" class="big-img mt-3" alt="">
     </div>
 
     <!-- Right Menu -->
     <div class="col-md-6">
       <div class="menu-item">
-        <img src="pic/pic62.jpg" alt="">
+        <img class="img-fluid" src="pic/pic62.jpg" alt="">
         <div>
           <p class="menu-title">NOODLES</p>
           <p class="menu-desc">Lorem ipsum dolor sit amt</p>
@@ -305,7 +318,7 @@
       </div>
 
       <div class="menu-item" style="margin-top: 5px;">
-        <img src="pic/pic63.jpg" alt="">
+        <img class="img-fluid" src="pic/pic63.jpg" alt="">
         <div>
           <p class="menu-title" >CHICKEN</p>
           <p class="menu-desc">Lorem ipsum dolor sit amt</p>

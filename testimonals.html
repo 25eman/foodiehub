@@ -171,15 +171,59 @@
             <div class="info-item"><span>Email :</span> info@table.com</div>
         </div>
         <div class="contact-right">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <textarea rows="4" placeholder="Message"></textarea>
-            <button>SEND NOW</button>
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="mail">
+            <input type="text" placeholder="Subject" id="subject">
+            <textarea rows="4" placeholder="Message" id="message"></textarea>
+            <button type="submit" onclick="submit()"  class="btn btn-submit">SEND NOW</button>
         </div>
     </div>
 </div>
 </div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+function submit(){
+  
+let name= document.getElementById("name").value
+let mail= document.getElementById("mail").value
+let subject= document.getElementById("subject").value
+let massage= document.getElementById("message").value
+
+if(name && mail && subject && message){
+  localStorage.setItem("username",name)
+  localStorage.setItem("user mail",mail)
+  localStorage.setItem("user subject",subject)
+  localStorage.setItem("user message",message)
+
+  Swal.fire({
+  title: "Success",
+  text: "Your message is recieved.......",
+  imageUrl: "pic/pic85.jpg",
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: "Custom image"
+});
+
+
+}
+else{
+  Swal.fire({
+  title: "Error",
+  text: "Input feild is empty.......",
+  imageUrl: "pic/pic85.jpg",
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: "Custom image"
+});
+}
+}
+</script>
 
 </body>
 </html>

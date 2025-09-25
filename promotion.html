@@ -226,13 +226,21 @@
       margin-bottom: 20px;
     }
 
+
+      html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* horizontal scroll aur white space hata dega */
+}
+
+/* Images ko responsive banaye */
      
 </style>
 </head>
 <body style="padding: 0;">
  <div class="container-fluid" >
    <div class="row text-center">
-            <div class="col-md-12" style="background:linear-gradient(rgba(0, 0, 0,0.6)), url(pic/pic78.jpg); height: 350px; background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="col-md-12 img-fluid" style="background:linear-gradient(rgba(0, 0, 0,0.6)), url(pic/pic78.jpg); height: 350px; background-repeat: no-repeat; background-position: center; background-size: cover;">
                     <div class="innerbox" style= "height: 300px; width: 100%; position: relative;">
                          <p style="color: white; font-size: 100px; font-weight: 300; position: relative; top: 70px;">Promotion</div>
 
