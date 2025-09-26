@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 <style>
-    html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* horizontal scroll aur white space hata dega */
-}
+    p{
+        color: #7e7e7e ;
+        text: center;
+    }
+    h5{
+        font-size: 36px;
+        margin-top: 50px;
+        font-weight: 100;
+    }
+    span{
+        color: #7e7e7e;
+    }
+    .red-1{
+       background-color:#db7137 ;
+    color: white;
+    width: 100px;
+    padding: 5px 10px;
+    border: #e7a07a; 
+    }
 
-/* Images ko responsive banaye */
-
-
-   /* nav & footer */
+    /* nav & footer */
   
 footer {
         background: url(pic/pic87.jpg);
@@ -27,7 +36,7 @@ footer {
       color: #fff;
       padding: 60px 0 20px;
     }
-    footer h5 {
+    footer h3 {
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -123,12 +132,10 @@ color: #f47c3c;
     align-items: center;
    
 }
+  
 </style>
-
-</head>
-<body style="margin: 0; padding: 0;">
-
-           <nav class="navbar navbar-expand-lg navbar-light">
+<body style="padding: 0px; margin: 0px;">
+    <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container ">
     <img class="img-fluid" src="pic/kitchen.png" alt="">
    <a class="navbar-brand fw-bold" href="#">FOODIE <span>HUB</span></a>
@@ -166,7 +173,7 @@ color: #f47c3c;
          
         
         <li class="nav-item">
-          <a class="nav-link ms-2 mynav" href="shop.html">Shop</a>
+          <a class="nav-link ms-2 mynav" href="#">Shop</a>
         </li>
 
                <li class="nav-item dropdown">
@@ -191,63 +198,91 @@ color: #f47c3c;
     </div>
   </div>
 </nav>
-
-
-  <div class="container-fluid" >
-   <div class="row text-center">
-            <div class="col-md-12" style="background:linear-gradient(rgba(0, 0, 0,0.6)), url(pic/pic50.jpg); height: 350px; background-repeat: no-repeat; background-position: center; background-size: cover;">
-                    <div class="innerbox" style= "height: 300px; width: 100%; position: relative;">
-                         <p style="color: white; font-size: 100px; font-weight: 300; position: relative; top: 75px;">Gallery</div>
+    <!--  -->
+      <section>
+        <div class="container-fluid" >
+        <div class="row text-center">
+            <div class="col-md-12" style="background: url(images/imagess.webp); height: 300px; background-repeat: no-repeat; background-position: center; background-size: cover;">
+                    <div class="innerbox" style="background-color: #291e1e66; height: 300px; width: 100%; position: relative;">
+                         <p  style="color: white; font-size: 100px; font-weight: 50; position: relative; top: 70px;"> TAG</div>
 
             </div>
         </div>
     </div>
-<div class="container mt-5">
-    <div class="row text-center">
-        <div class="col-md-3">
-            <p style="color: #7e7e7e; font-size: 20px;">OUR PHOTOS</p>
-            <h4 style="font-size: 40px; font-weight: 50;">Restaurant <br>
-            Main Courses</h4>
+   
+    </section>
+    <!--  -->
+<section>
+    <div class="container  mt-5 mb-5">
+        <div class="row  text-center">
+            <div class="col-md-4">
+                <img src="images/tag-1.jpg" width="100%" alt=""> 
+                <h5 >New Appetizers</h5>
+                <span>10 Jan</span>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                <div class="">
+                    <button class="red-1">Read more</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/tag-2.jpg" width="100%" alt="">
+                <h5 >Menu Update</h5>
+                <span>10 Jan</span>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                <div class="">
+                    <button class="red-1">Read more</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/tag-3.jpg" width="100%" alt="">
+                <h5 >Fresh Ingredients</h5>
+                <span>10 Jan</span>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                <div class="">
+                    <button class="red-1">Read more</button>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-             <h4 style="font-size: 40px; font-weight: 50;">1978</h4>
-            <p style="color: #7e7e7e;"> Lorem ipsum dolor sit amet, <br>
-             consectetur adipiscing elit. <br>
-             Curabitur ut diam etni</p>
-        </div>
-        <div class="col-md-3">
-             <h4 style="font-size: 40px; font-weight: 50;">50<span style="color: #7e7e7e;font-size: 30px;">K</span></h4>
-            <p style="color: #7e7e7e;"> Lorem ipsum dolor sit amet, <br>
-             consectetur adipiscing elit. <br>
-             Curabitur ut diam etni </p>
-        </div>
-       <div class="col-md-3">
-        <h4 style="font-size: 40px; font-weight: 50;"><span style="color: #7e7e7e; font-size: 35px;">+</span>20</h4>
-            <p style="color: #7e7e7e;"> Lorem ipsum dolor sit amet, <br>
-             consectetur adipiscing elit. <br>
-             Curabitur ut diam etni </p>
-       </div>
+        <!-- second row -->
+         <div class="row mt-5 text-center">
+            <div class="col-md-4">
+                 <img src="images/post-04-1.jpg" width="100%" alt=""> 
+                <h5 >Inauguration</h5>
+                <span>10 Jan</span>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                <div class="">
+                    <button class="red-1">Read more</button>
+                </div>
+            </div>
+             <div class="col-md-4">
+                 <img src="images/post-03-1.jpg" width="100%" alt=""> 
+                <h5 >WINGS</h5>
+                <span>10 Jan</span>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                <div class="">
+                    <button class="red-1">Read more</button>
+                </div>
+             </div>
+              <div class="col-md-4">
+                 <img src="images/post-02-1.jpg" width="100%" alt=""> 
+                <h5 >HOT PLATES</h5>
+                <span>10 Jan</span>
+                <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                <div class="">
+                    <button class="red-1">Read more</button>
+                </div>
+              </div>
+         </div>
     </div>
-</div>
+</section>
 
-
-<div class="container">
-    <div class="gallery" style="margin-top: 40px;">
-      <div class="item"><img src="pic/pic56.jpg" width="100%" alt="img1"></div>
-      <div class="item"><img src="pic/pic57.jpg" width="100%" alt="img2"></div>
-      <div class="item tall"><img src="pic/pic58.jpg" width="100%" alt="img3"></div>
-      <div class="item wide"><img src="pic/pic59.jpg" width="100%" alt="img4"></div>
-      
-    </div>
-
-</div>
 
    <footer>
   <div class="container">
     <div class="row text-center">
       <!-- About Us -->
       <div class="col-md-4 col-sm-6 mb-4">
-        <h5>About Us</h5>
+        <h3>About Us</h3>
         <p>FoodieHub connects food lovers with tasty<br> ideas and flavors. Discover, enjoy, and <br> share your passion for food with us.</p>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -259,7 +294,7 @@ color: #f47c3c;
 
       <!-- Explore -->
       <div class="col-md-4 col-sm-6 mb-4">
-        <h5>Explore</h5>
+        <h3>Explore</h3>
         <ul>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Services</a></li>
@@ -273,7 +308,7 @@ color: #f47c3c;
 
       <!-- Subscribe -->
       <div class="col-md-4 col-sm-6 mb-4">
-        <h5>Subscribe</h5>
+        <h3>Subscribe</h3>
         <p>Subscribe for fresh recipes and foodie updates, straight to your inbox.</p>
         <div class="subscribe-input">
           <input type="email" placeholder="E-mail Address">
@@ -285,12 +320,10 @@ color: #f47c3c;
   
   </div>
 </footer>
+    
 
 
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

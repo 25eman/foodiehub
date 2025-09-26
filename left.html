@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    
+   p{
+    color:#7e7e7e; 
+    text: center;
+   }
+   .new{
+    background: white;
+    color: #7e7e7e;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    gap: 30px;
+    margin: 20px;
+   }
+  * { 
+    
+    box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #fafafa;
+  color: #222;
+}
+.container { max-width: 980px; margin: 0 auto; }
+
+h2 { margin-bottom: 16px; color: #666; font-weight: 400; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* optional special items to mimic collage look */
+.item.tall { grid-row: span 2; }
+.item.wide { grid-column: span 2; }
+
+.item {
+  background: #eee;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* important: keep image cropped nicely */
+  display: block;
+}
+
+/* responsive breakpoints */
+@media (max-width: 900px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .item.tall { grid-row: span 1; }
+  .item.wide { grid-column: span 1; }
+}
+
+@media (max-width: 480px) {
+  .gallery { grid-template-columns: 1fr; gap: 10px; }
+}
+
+/* nav & footer */
+  
+footer {
+        background: url(pic/pic87.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+      color: #fff;
+      padding: 60px 0 20px;
+    }
+    footer h5 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 5px;
+    }
+    footer a {
+      text-decoration: none;
+      color: #bbb;
+    }
+    footer a:hover {
+      color:#f47c3c;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      color: #fff;
+      font-size: 18px;
+    }
+    .subscribe-input {
+      display: flex;
+    }
+    .subscribe-input input {
+      border: none;
+      border-radius: 5px 0 0 5px;
+      padding: 10px;
+      flex: 1;
+    }
+    .subscribe-input button {
+      border: none;
+      border-radius: 0 5px 5px 0;
+      padding: 10px 15px;
+      background: #f47c3c;
+      color: #fff;
+    }
+
+.mynav{
+    font-weight: bold;
+    transition: all 0.2s linear;
+    
+}
+.mynav:hover{
+color: #f47c3c;
+
+}
+
+.mytext{
+    color: antiquewhite;
+    margin-top: 2px;
+    width: 300px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.foottext{
+    color: antiquewhite;
+    margin-top: 4px;
+}
+.text{
+    color:antiquewhite;
+    
+    
+    
+}
+.text li:hover{
+    color:#f47c3c;
+    
+    
+    
+}
+.text li{
+    list-style-type: none;
+    gap: 30px;
+} 
+.new-button{
+    background: #f47c3c; 
+    padding: 5px 10px;
+    border: #f47c3c;
+    border-radius: 5px;
+    color: white;
+}
+.new-button:hover{
+    background: white; 
+    border:2px solid #f47c3c;
+    border-radius: 5px;
+    color: #f47c3c;
+}
+.red-4{
+    align-items: center;
+   
+}
+
+
+</style>
+<body style="padding: 0px; margin: 0px;">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container ">
+    <img class="img-fluid" src="pic/kitchen.png" alt="">
+   <a class="navbar-brand fw-bold" href="#">FOODIE <span>HUB</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link ms-2 mynav " aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link ms-2 mynav" href="About.html">About Us</a>
+        </li>
+
+         <li>
+          <a class="nav-link ms-2 mynav" href="Menu1.html">Our Menu</a>
+       
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link ms-2 mynav dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Services
+          </a>
+       
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="delivery.html">Delievery</a></li>
+                <li><a class="dropdown-item" href="product.html">Product</a></li>
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+               <li><a class="dropdown-item" href="testimonals.html">Testimonals</a></li>
+               <li><a class="dropdown-item" href="promotion.html">Promotion</a></li>
+          </ul>
+        </li>
+         
+        
+        <li class="nav-item">
+          <a class="nav-link ms-2 mynav" href="shop.html">Shop</a>
+        </li>
+
+               <li class="nav-item dropdown">
+          <a class="nav-link ms-2 mynav dropdown-toggle" href="new.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           News
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="right.html">right sidebar</a></li>
+                 <li><a class="dropdown-item" href="left.html">left sidebar</a></li>     
+          </ul>
+        </li>
+       
+
+         <li class="nav-item">
+          <a class="nav-link ms-2 mynav" href="contact.html">Contact Us</a>
+        </li>
+        
+      </ul>
+    
+       <a href="contact.html"> <button class=" btn-outline-success new-button" type="submit">BOOK NOW</button></a>
+   
+    </div>
+  </div>
+</nav>
+  <!--  -->
+  <section>
+ <div class="container-fluid" >
+   <div class="row text-center">
+            <div class="col-md-12" style="background:linear-gradient(rgba(0, 0, 0,0.6)), url(images/imagess.webp); height: 350px; background-repeat: no-repeat; background-position: center; background-size: cover;">
+                    <div class="innerbox" style= "height: 300px; width: 100%; position: relative;">
+                         <p style="color: white; font-size: 100px; font-weight: 300; position: relative; top: 75px;"> News</div>
+
+            </div>
+        </div>
+    </div>
+  </section>
+   <!--  -->
+    
+    <div class="container">
+        <div class="row mt-5">
+            <!-- <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6">
+                    <p>ivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis.</p>
+                </div>
+                 <div class="col-md-6">
+                    <p>ivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis.</p>
+                 </div>
+              </div>  
+                <h5>OUR LATEST MENU</h5>
+                <p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc..</p>
+             
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <img src="images/slide-1.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/slide-2.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <h5 style="margin-top: 50px;">SPECIAL GUEST</h5>
+                <p style="margin-top: 30px;">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante pretium, consectetur leo at, congue quam.</p>
+                <div class="row">
+                    <div class="col-mt-12">
+                       <div class="red">
+                         tag: <a href="tag.html"> <button class="new">dinner</button></a>
+                        <a href="tag.html"> <button class="new">lunch</button></a>
+                        <a href=""> <button class="new">menu</button></a>
+                        <a href=""> <button class="new">restaurants</button></a>
+                        <a href=""> <button class="new">wine</button></a>
+                       </div>
+                    </div>
+                </div>
+
+
+            </div> -->
+
+<!--  -->
+
+            <div class="col-md-5">
+                <img src="images/celender.png" width="100%" height="30%" alt="">
+                 <div class="container">
+    <br>
+    <div class="gallery">
+      <div class="item"><img src="images/egg-1.jpg" width="100%" alt="img1"></div>
+      <div class="item"><img src="images/egg-1.jpg" width="100%" alt="img2"></div>
+      <div class="item tall"><img src="images/egg-2.jpg" width="100%" alt="img3"></div>
+      <div class="item wide"><img src="images/egg-3.jpg" width="100%" alt="img4"></div>
+      
+    </div>
+    
+  </div>
+  <h5 style="margin-top: 50px;">Recent Posts</h5>
+  <br>
+             <p>New Appetizers</p><hr>
+             <p>Menu Update</p><hr>
+             <p>Fresh Ingredients</p><hr>
+             <p>Inauguration</p>
+            </div>
+            <!--  -->
+
+              <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-6">
+                    <p>ivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis.</p>
+                </div>
+                 <div class="col-md-6">
+                    <p>ivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis.</p>
+                 </div>
+              </div>  
+                <h5>OUR LATEST MENU</h5>
+                <p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc..</p>
+             
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <img src="images/slide-1.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/slide-2.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <h5 style="margin-top: 50px;">SPECIAL GUEST</h5>
+                <p style="margin-top: 30px;">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante pretium, consectetur leo at, congue quam.</p>
+                <div class="row">
+                    <div class="col-mt-12">
+                       <div class="red">
+                         tag: <a href="tag.html"> <button class="new">dinner</button></a>
+                        <a href="tag.html"> <button class="new">lunch</button></a>
+                        <a href=""> <button class="new">menu</button></a>
+                        <a href=""> <button class="new">restaurants</button></a>
+                        <a href=""> <button class="new">wine</button></a>
+                       </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   </section> 
+
+   <footer>
+  <div class="container">
+    <div class="row text-center">
+      <!-- About Us -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <h5>About Us</h5>
+        <p>FoodieHub connects food lovers with tasty<br> ideas and flavors. Discover, enjoy, and <br> share your passion for food with us.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+     
+
+      <!-- Subscribe -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <h5>Subscribe</h5>
+        <p>Subscribe for fresh recipes and foodie updates, straight to your inbox.</p>
+        <div class="subscribe-input">
+          <input type="email" placeholder="E-mail Address">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+</footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+</html>
